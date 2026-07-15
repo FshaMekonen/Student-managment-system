@@ -1,0 +1,151 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body, html {
+ margin: 0; 
+ font-family: Arial, sans-serif;
+  background-color: #f4f4f4; 
+  text-align: center;
+}
+
+/* ===== NAVBAR ===== */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0073e6;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav a:hover {
+    background-color: #005bb5;
+}
+
+/* ===== CONTENT AREA ===== */
+.content {
+    position: absolute;
+    top: 70px;       /* height of navbar */
+    bottom: 50px;    /* height of footer */
+    left: 0;
+    right: 0;
+    overflow: auto;  /* scrollable area */
+    padding: 20px;
+}
+
+/* ===== TABLE CONTAINER ===== */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== TABLE STYLING ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #0073e6;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e6f0ff;
+}
+
+/* ===== STATUS LABELS ===== */
+.status-pending {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-rejected {
+    color: red;
+    font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+/* ===== BUTTONS / LINKS ===== */
+a.button, .section button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+a.button:hover, .section button:hover {
+    background-color: #45a049;
+}
+/* Center section */
+.section {
+    min-height: calc(100vh - 120px); /* screen height minus nav+footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    margin-top: 70px;   /* pushes content below nav */
+}
+/* Card (form container) */
+.card {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
