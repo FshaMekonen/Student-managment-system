@@ -155,6 +155,8 @@ Use **Login** on the home page. The system checks credentials against admin, HOD
 
 UI screenshots are stored in the [`Assets/`](Assets/) folder. Click any link or image to open the full file.
 
+The home page screenshot reflects the updated homepage image shown in the application.
+
 | Screen | Link |
 | ------ | ---- |
 | Home page | [Assets/other/home.png](Assets/other/home.png) |
